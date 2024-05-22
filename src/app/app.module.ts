@@ -13,6 +13,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { CreateProjectComponent } from './create-project/create-project.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { ClientDetailsComponent } from './client-details/client-details.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +27,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     DashboardComponent,
     ViewTasksComponent,
     CreateTaskComponent,
+    CreateProjectComponent,
+    ProjectDetailsComponent,
+    ClientDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +37,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    CommonModule,
+    FormsModule
   ],
   providers: [
   

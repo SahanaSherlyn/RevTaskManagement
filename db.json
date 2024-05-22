@@ -91,5 +91,126 @@
       "completedDate": "2024-05-22",
       "projectId": ""
     }
+  ],
+  "users": [
+    {
+      "id": "10",
+      "name": "Sophia Brown",
+      "email": "sophia.brown@example.com",
+      "contact": "+1122334455",
+      "role": "team-member"
+    },
+    {
+      "id": "12",
+      "name": "Alice White",
+      "email": "alice.white@example.com",
+      "contact": "+9876543210",
+      "role": "admin"
+    },
+    {
+      "id": "13",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "contact": "+1234567890",
+      "role": "project-manager"
+    },
+    {
+      "id": "15",
+      "name": "Michael Brown",
+      "email": "michael.brown@example.com",
+      "contact": "+1987654321",
+      "role": "team-member"
+    },
+    {
+      "id": "16",
+      "name": "Sophia Lee",
+      "email": "sophia.lee@example.com",
+      "contact": "+1234567890",
+      "role": "project-manager"
+    },
+    {
+      "id": "17",
+      "name": "Sophia Lee",
+      "email": "sophia.lee@example.com",
+      "contact": "+1234567890",
+      "role": "project-manager"
+    },
+    {
+      "id": 0,
+      "name": "satheesh",
+      "email": "sugithisatheesh8499@gmail.com",
+      "contact": "6302569010",
+      "role": "project-manager"
+    }
+  ],
+
+  "projects": [
+    {
+      "projectID": 1,
+      "projectName": "Upgrade Company Website",
+      "projectDescription": "Redesign and enhance the company website for better user experience.",
+      "projectManagerID": 101,
+      "startDate": "2024-06-01",
+      "endDate": "2024-09-30",
+      "status": "Active",
+      "tasks": [
+        {
+          "taskID": 101,
+          "taskName": "Design Wireframes",
+          "taskDescription": "Create wireframe designs for the new website layout.",
+          "assignedToTeamMemberID": 301,
+          "startDate": "2024-06-01",
+          "endDate": "2024-06-15",
+          "status": "In Progress",
+          "priority": "High"
+        },
+        {
+          "taskID": 102,
+          "taskName": "Develop Frontend",
+          "taskDescription": "Implement frontend design using HTML, CSS, and JavaScript.",
+          "assignedToTeamMemberID": 302,
+          "startDate": "2024-06-16",
+          "endDate": "2024-07-15",
+          "status": "Not Started",
+          "priority": "Medium"
+        },
+        {
+          "taskID": 103,
+          "taskName": "Implement Backend Functionality",
+          "taskDescription": "Develop backend functionality using Python and Django framework.",
+          "assignedToTeamMemberID": 303,
+          "startDate": "2024-07-01",
+          "endDate": "2024-08-15",
+          "status": "Not Started",
+          "priority": "High"
+        }
+      ],
+      "teamMembers": [
+        {
+          "teamMemberID": 101,
+          "teamMemberName": "John Doe",
+          "email": "john.doe@example.com",
+          "designation": "Project Manager"
+        },
+        {
+          "teamMemberID": 301,
+          "teamMemberName": "Alice",
+          "email": "alice@example.com",
+          "designation": "Designer"
+        },
+        {
+          "teamMemberID": 302,
+          "teamMemberName": "Bob",
+          "email": "bob@example.com",
+          "designation": "Frontend Developer"
+        },
+        {
+          "teamMemberID": 303,
+          "teamMemberName": "Charlie",
+          "email": "charlie@example.com",
+          "designation": "Backend Developer"
+        }
+      ]
+    }
   ]
 }

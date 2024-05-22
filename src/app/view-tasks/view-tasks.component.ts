@@ -11,7 +11,7 @@ export class ViewTasksComponent implements OnInit {
   tasks: any[] = [];
   showModal = false;
   taskForm: FormGroup;
-  selectedTask: any;
+  selectedTask: any = null;
 
   constructor(
     private restApi: RestApiService, // Inject RestApiService
@@ -44,7 +44,6 @@ export class ViewTasksComponent implements OnInit {
       }
     });
   }
-  
 
   openTaskForm(task: any): void {
     this.selectedTask = task;
@@ -55,9 +54,11 @@ export class ViewTasksComponent implements OnInit {
   closeTaskForm(): void {
     this.showModal = false;
     this.taskForm.reset();
+    this.selectedTask = null; // Reset selected task
   }
 
   onSubmit(): void {
+    console.log('Form submitted');  // Add this line
     if (this.taskForm.valid) {
       const updatedTask = { ...this.selectedTask, ...this.taskForm.value };
       this.restApi.updateTask(updatedTask.id, updatedTask).subscribe({
@@ -72,6 +73,7 @@ export class ViewTasksComponent implements OnInit {
       });
     }
   }
+  
 
   onUpdate(task: any): void {
     this.openTaskForm(task);
